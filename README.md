@@ -53,7 +53,8 @@ Access to these features is available only to registered and logged-in users.
 
 - This project was created for academic purposes  
 - Runs locally via XAMPP  
-- Deployment to a live server requires additional configuration  
+- Deployment to a live server requires additional configuration
+- Administrator privileges can only be assigned via the database.
 
 ---
   
