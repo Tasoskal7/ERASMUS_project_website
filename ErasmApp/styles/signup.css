@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url("../media/europeanunion.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.header {
+  width: 100%;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 6%;
+}
+
+nav img {
+  width: 250px;
+  max-width: 100%;
+}
+
+.navlinks {
+  flex: 1;
+  text-align: right;
+}
+
+.navlinks ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.navlinks ul li {
+  list-style: none;
+}
+
+.navlinks ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  padding: 8px 12px;
+  display: inline-block;
+}
+
+.navlinks button {
+  background-color: #f8f8f8;
+  color: #000000;
+  border: none;
+  padding: 5px 10px;
+  font-size: 13px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+.navlinks button a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.navlinks ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #f8f8f8;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.navlinks ul li:hover::after {
+  width: 100%;
+}
+
+.content {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.content h1 {
+  font-size: clamp(24px, 5vw, 62px);
+  margin-bottom: 20px;
+}
+
+.content p {
+  margin: 20px 0;
+  font-size: clamp(14px, 2vw, 20px);
+  line-height: 1.6;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 12px 34px;
+  font-size: 16px;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s;
+  margin: 10px 5px;
+}
+
+.btn:hover {
+  border-color: #204593;
+  background: #204593;
+}
+
+.form-container {
+  background-color: rgba(4, 9, 30, 0.8);
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 500px;
+  margin: 30px auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: white;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #204593;
+  box-shadow: 0 0 0 2px rgba(32, 69, 147, 0.3);
+}
+
+@media screen and (max-width: 900px) {
+  nav {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  nav img {
+    margin-bottom: 15px;
+  }
+
+  .navlinks ul {
+    justify-content: center;
+  }
+
+  .content {
+    padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navlinks ul {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .navlinks ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navlinks button {
+    margin: 5px 0;
+    width: 100%;
+  }
+
+  .form-container,
+  .login-box {
+    padding: 20px;
+  }
+}

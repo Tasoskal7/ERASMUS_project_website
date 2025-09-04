@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="el">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UOP ERASMUS GUIDE - Εγγραφή</title>
+    <link rel="stylesheet" href="styles/signup.css" />
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="media/erasmuslogo.png" alt="Erasmus Logo"/></a>
+        <div class="navlinks">
+          <ul>
+            <li><a href="index.html">ΑΡΧΙΚΗ</a></li>
+            <li><a href="more.html">ΠΕΡΙΣΣΟΤΕΡΑ</a></li>
+            <li><a href="requirements.html">ΑΠΑΙΤΗΣΕΙΣ</a></li>
+            <li><a href="application.html">ΦΟΡΜΑ</a></li>
+            <li><a href="login.php">ΣΥΝΔΕΣΗ</a></li>
+            <li><a href="signup.html">ΕΓΓΡΑΦΗ</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="content">
+        <h1>Δημιουργία Λογαριασμού</h1>
+
+        <div class="form-container">
+          <form>
+            <div class="form-group">
+              <label for="reg-firstname">Όνομα:</label>
+              <input type="text" id="reg-firstname" required />
+            </div>
+
+            <div class="form-group">
+              <label for="reg-lastname">Επίθετο:</label>
+              <input type="text" id="reg-lastname" required />
+            </div>
+
+            <div class="form-group">
+              <label for="reg-student-id">Αριθμός Μητρώου:</label>
+              <input type="text" id="reg-student-id" required />
+            </div>
+
+            <div class="form-group">
+              <label for="reg-email">Email:</label>
+              <input type="email" id="reg-email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="reg-phone">Τηλέφωνο:</label>
+              <input type="tel" id="reg-phone" />
+            </div>
+
+            <div class="form-group">
+              <label for="reg-username">Όνομα Χρήστη:</label>
+              <input type="text" id="reg-username" required />
+            </div>
+
+            <div class="form-group">
+              <label for="reg-password">Κωδικός Πρόσβασης:</label>
+              <input type="password" id="reg-password" required />
+            </div>
+
+            <div class="form-group">
+              <label for="reg-confirm-password">Επιβεβαίωση Κωδικού:</label>
+              <input type="password" id="reg-confirm-password" required />
+            </div>
+
+            <button type="submit" class="btn">ΕΓΓΡΑΦΗ</button>
+
+            <p class="text-center mt-20">
+              Έχετε ήδη λογαριασμό; <a href="login.php">Συνδεθείτε εδώ</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
