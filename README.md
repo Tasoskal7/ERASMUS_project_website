@@ -57,6 +57,18 @@ Access to these features is available only to registered and logged-in users.
 - Administrator privileges can only be assigned via the database.
 
 ---
+## Ενδεικτικά Screenshots
+
+![Main Page](images/1.png)
+![Info section](images/2.png)
+![Requirements](images/3.png)
+![Login](images/5.png)
+![Sign Up](images/6.png)
+![Application page](images/10.png)
+![Application period set for admins](images/7.png)
+
+
+---
   
 ## 📄 License
 
